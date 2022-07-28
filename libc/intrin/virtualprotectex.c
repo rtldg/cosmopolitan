@@ -26,7 +26,7 @@
 __msabi extern typeof(VirtualProtectEx) *const __imp_VirtualProtectEx;
 
 textwindows bool32
-VirtualProtectEx(void* hProcess, void* lpAddress, uint64_t dwSize,
+VirtualProtectEx(int64_t hProcess, void* lpAddress, uint64_t dwSize,
                  uint32_t flNewProtect, uint32_t* lpflOldProtect) {
   bool32 ok;
   ok = __imp_VirtualProtectEx(hProcess, lpAddress, dwSize,

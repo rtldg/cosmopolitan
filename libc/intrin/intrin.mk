@@ -120,6 +120,8 @@ o/$(MODE)/libc/intrin/deletefile.o			\
 o/$(MODE)/libc/intrin/createpipe.o			\
 o/$(MODE)/libc/intrin/closehandle.o			\
 o/$(MODE)/libc/intrin/openprocess.o			\
+o/$(MODE)/libc/intrin/writeprocessmemory.o	\
+o/$(MODE)/libc/intrin/readprocessmemory.o	\
 o/$(MODE)/libc/intrin/createthread.o			\
 o/$(MODE)/libc/intrin/findclose.o			\
 o/$(MODE)/libc/intrin/findnextfile.o			\
