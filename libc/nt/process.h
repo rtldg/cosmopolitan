@@ -64,8 +64,11 @@ bool32 GetProcessAffinityMask(int64_t hProcess,
 uint64_t /*bool32*/ SetProcessAffinityMask(int64_t hProcess,
                                            uintptr_t dwProcessAffinityMask);
 bool32 ReadProcessMemory(int64_t hProcess, const void* lpBaseAddress,
-                         void* lpBuffer, uint64_t nSize
+                         void* lpBuffer, uint64_t nSize,
                          uint64_t* lpNumberOfBytesRead);
+bool32 WriteProcessMemory(int64_t hProcess, void* lpBaseAddress,
+                          const void* lpBuffer, uint64_t nSize,
+                          uint64_t* lpNumberOfBytesRead);
 
 /* e.g. kNtAboveNormalPriorityClass, kNtHighPriorityClass */
 uint32_t GetPriorityClass(int64_t hProcess);
