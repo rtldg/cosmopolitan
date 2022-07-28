@@ -1,2 +1,12 @@
 .include "o/libc/nt/codegen.inc"
 .imp	kernel32,__imp_VirtualProtectEx,VirtualProtectEx,0
+
+	.text.windows
+__VirtualProtectEx:
+	push	%rbp
+	mov	%rsp,%rbp
+	.profilable
+	mov	__imp_VirtualProtectEx(%rip),%rax
+	jmp	__sysv2nt
+	.endfn	__VirtualProtectEx,globl
+	.previous

@@ -130,6 +130,7 @@ o/$(MODE)/libc/intrin/createsymboliclink.o		\
 o/$(MODE)/libc/intrin/createnamedpipe.o			\
 o/$(MODE)/libc/intrin/unmapviewoffile.o			\
 o/$(MODE)/libc/intrin/virtualprotect.o			\
+o/$(MODE)/libc/intrin/virtualprotectex.o		\
 o/$(MODE)/libc/intrin/flushviewoffile.o			\
 o/$(MODE)/libc/intrin/createdirectory.o			\
 o/$(MODE)/libc/intrin/flushfilebuffers.o		\

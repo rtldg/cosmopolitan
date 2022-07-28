@@ -1271,7 +1271,6 @@ imp	'VirtualAllocExNuma'					VirtualAllocExNuma					kernel32	0
 imp	'VirtualFree'						VirtualFree						kernel32	0	3
 imp	'VirtualFreeEx'						VirtualFreeEx						kernel32	0
 imp	'VirtualLock'						VirtualLock						kernel32	0
-imp	'VirtualProtectEx'					VirtualProtectEx					kernel32	0
 imp	'VirtualQuery'						VirtualQuery						kernel32	0	3
 imp	'VirtualQueryEx'					VirtualQueryEx						kernel32	0
 imp	'VirtualUnlock'						VirtualUnlock						kernel32	0
@@ -1370,6 +1369,7 @@ imp	'__SetCurrentDirectory'					SetCurrentDirectoryW					kernel32	0	1
 imp	'__TerminateProcess'					TerminateProcess					kernel32	0	2
 imp	'__UnmapViewOfFile'					UnmapViewOfFile						kernel32	0	1
 imp	'__VirtualProtect'					VirtualProtect						kernel32	0	4
+imp	'__VirtualProtectEx'					VirtualProtectEx					kernel32	0
 imp	'__WaitForMultipleObjects'				WaitForMultipleObjects					kernel32	0	4
 imp	'__WaitForSingleObject'					WaitForSingleObject					kernel32	0	2
 
